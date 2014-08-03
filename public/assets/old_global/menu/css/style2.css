@@ -1,0 +1,50 @@
+﻿html,body,div,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dt,dd,p,blockquote,pre,form,fieldset,table,th,td{margin:0; padding:0;}
+
+body {font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; font-size:11px; width: 960px; margin: 10px auto;padding: 0 10px;}
+table {border-collapse: collapse; border-spacing: 0;}
+ul {list-style-type: none; list-style-image: none; list-style-position: outside;}
+img {border: none;}
+fieldset {/ * clear: both;border-color: #eee;border-width: 1px;border-style: solid;border-color: #dedede;padding: 20px; margin: 0 0 20px; background: #fff url(images/bg_fieldset.png) repeat-x scroll left bottom;}
+fieldset legend {font-size:18px;font-weight: 400;color: #0056c0;*margin: 0 0 20px 0;padding: 0 5px;background: #fff;}
+label {display: block;float: left; width: 200px; padding: 0; margin: 7px 0 0;text-align: right;}
+input, select, textarea {width:auto;margin:5px 0 0 10px;font-size: 13px;}
+textarea {overflow: auto;}
+a:link, a:visited {color:#0056c0; text-decoration:underline;}
+a:hover {color:#de2d2d; text-decoration:underline;}
+
+.seminar-list h1{font-size:16px; margin-bottom: 20px;}
+.seminar-list h2{font-size:12px; margin-bottom: 10px;}
+.seminar-list table {width: 100%; margin-bottom: 20px;}
+.seminar-list thead tr{background: #e5e5e5 url(images/bg_th.png) repeat-x;}
+.seminar-list th {text-align:left; font-weight: 400; border-bottom: 1px solid #d6d6d6; border-top: 1px solid #d6d6d6; vertical-align:middle;}
+.seminar-list th div {line-height:30px; padding:0 10px 0 35px;}
+.seminar-list th.date div {background: url(images/icon_date.png) no-repeat 10px 50%; _background: url(images/icon_date.gif) no-repeat 10px 50%;}
+.seminar-list th.town div {background: url(images/icon_town.png) no-repeat 10px 50%; _background: url(images/icon_town.gif) no-repeat 10px 50%;}
+.seminar-list th.place div {background: url(images/icon_place.png) no-repeat 10px 50%; _background: url(images/icon_place.gif) no-repeat 10px 50%;}
+.seminar-list th.time div {background: url(images/icon_time.png) no-repeat 10px 50%; _background: url(images/icon_time.gif) no-repeat 10px 50%;}
+.seminar-list th.info div {background: url(images/icon_info.png) no-repeat 10px 50%; _background: url(images/icon_info.gif) no-repeat 10px 50%;}
+.seminar-list th.name div {background: url(images/icon_name.png) no-repeat 10px 50%; _background: url(images/icon_name.gif) no-repeat 10px 50%;}
+.seminar-list td {line-height:20px; padding: 5px 0 5px 10px; vertical-align:middle;}
+.seminar-list th.time div {background: url(images/icon_time.png) no-repeat 10px 50%; _background: url(images/icon_time.gif) no-repeat 10px 50%;}
+.seminar-list td.last-column {padding-right:10px;}
+.seminar-list td input{margin:0;}
+.seminar-list tr.tr_bg {background: #f5f5f5;}
+.seminar-list tr.tr_bg td {border-top: 1px solid #d6d6d6; border-bottom: 1px solid #d6d6d6;}
+.seminar-list label {margin:0 !important; width:auto !important;cursor:pointer;}
+
+
+.form_education_2 h3 {width: 198px; margin: 15px 0 5px 0; text-align: right; font-weight: bold; color: #333; font-size:11px;}
+.form_education_2 p {padding: 0 0 10px 0; color: green;}
+.form_education_2 p.warning {padding: 0 0 10px 0; color: #f10101;}
+.form_education_2 span {position: relative; *top: -2px; font-size:10px;}
+@-moz-document url-prefix(){body .form_education_2 span{top: -3px;}}
+.form_education_2 span label{width: auto; float: none; text-align: left; display: inline;}
+.form_education_2 td label {width: 50px; margin: 1px 0 0 10px;}
+.form_education_2 td label.checkbox {width: 90px; margin: 7px 0 0 10px; *margin: 3px 0 0 10px;}
+.form_education_2 td small {margin: 0 0 5px 7px;_margin: 0 0 5px 10px;}
+.form_education_2 input#reset {margin-left:0px;}
+.form_education_2 small {display: block;margin: 0 0 5px 207px;_margin: 0 0 5px 210px;padding: 1px 3px;font-size: 88%;}
+.form_education_2 .required{font-weight:bold;}
+.form_education_2 br {clear:left;}
+
+.buttons {width: 190px; margin: 0 auto;}

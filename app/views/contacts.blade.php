@@ -1,0 +1,70 @@
+@extends('layouts.static')
+
+@section('content')
+                <main class="wrapper clearfix">
+                    <h2 class="title padding-t25">Контактная информация</h2>
+                    <table class="cont-table">
+                        <tr>
+                            <td class="table-title">Отдел по оранизации семинаров</td>
+                        </tr>
+                        <tr>
+                            <td><span class="td-phone">+7 (961) 286-91-31</span></td>
+                        </tr>
+                        <tr>
+                            <td><a href="mailto:global-tender@yandex.ru" class="us-link">global-tender@yandex.ru</td>
+                        </tr>
+                        <tr>
+                            <td>Надежда Сергеевна</td>
+                        </tr>
+                    </table>
+                    <table class="cont-table">
+                        <tr>
+                            <td colspan="2" class="table-title">Должностные лица, имеющие право подписи документов от имени организации</td>
+                        </tr>   
+                        <tr>
+                            <td>Генеральный директор</td>
+                            <td>Луковский Алексей Владимирович, действует на основании Устава</td>
+                        </tr>
+                        <tr>
+                            <td>Руководитель ОП</td>
+                            <td>Бордачева Татьяна Геннадьевна, действует на основании доверенности № 1 от 06 февраля 2014 г.</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Наименование</td>
+                            <td>Общество с ограниченной ответственностью «Глобал-Тендер»</td>
+                        </tr>
+                        <tr>
+                            <td>ИНН</td>
+                            <td>6164307585</td>
+                        </tr>
+                        <tr>
+                            <td>КПП</td>
+                            <td>616401001</td>
+                        </tr>       
+                        <tr>
+                            <td>Расчетный счет</td>
+                            <td>40702810752090010387</td>
+                        </tr>
+                        <tr>
+                            <td>Банк</td>
+                            <td>Юго-Западный банк, ООО "Сбербанк России" Ростов-на-Дону</td>
+                        </tr>
+                        <tr>
+                            <td>Бик</td>
+                            <td>046015602</td>
+                        </tr>
+                        <tr>
+                            <td>Кор/счет</td>
+                            <td>30101810600000000602</td>
+                        </tr>
+                        <tr>
+                            <td>Система налогообложения</td>
+                            <td>УСНО</td>
+                        </tr>
+                            
+                    </table>
+                </main>
+@stop
