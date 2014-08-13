@@ -17,3 +17,4 @@ Route::get('/seminar', 'HomeController@seminar');
 Route::get('/feedback', 'HomeController@feedback');
 Route::get('/lektors', 'HomeController@lektors');
 Route::get('/contacts', 'HomeController@contacts');
+Route::post('/mailsend', 'HomeController@mailsend');
