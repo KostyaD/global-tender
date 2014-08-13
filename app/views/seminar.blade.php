@@ -189,3 +189,45 @@ $semArray = array(
                     <?}?>
                 </main>
 @stop
+
+@section('script')
+    
+    <script>
+
+        $(document).on('submit', '.apply-form', function(e){
+            e.preventDefault();
+            if($('#policy').is(':checked')) {
+                $('.agree').removeClass('error');
+            } else {
+                $('.agree').addClass('error');
+                return;
+            }
+            $('.btn-subm').addClass('active').attr('disabled', 'disabled');
+            $.ajax({
+                url: '{{URL::to("mailsend")}}',
+                type: 'POST',
+                data: $(this).serialize()
+            }).always(function(){
+                $('.btn-subm').removeClass('active').removeAttr('disabled');
+                Popup.close('apply');
+                setTimeout(function(){
+                    Popup.show('result');
+
+                    setTimeout(function(){
+                        Popup.close('result');
+                    }, 3000);
+                }, 600);
+            }).done(function(){
+                $('.result-icon').html('<i class="fa fa-paper-plane"></i>');
+                $('.result-text').html('Ваша заявка успешно отправленна');
+            }).fail(function(data){
+                console.log(data);
+                $('.result-icon').html('<i class="fa fa-times-circle"></i>');
+                $('.result-text').html('Произошла ошибка при отправке, попробуйте позже');
+            });
+            return false;
+        });
+
+    </script>
+
+@stop

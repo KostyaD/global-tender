@@ -116,14 +116,10 @@ body {
   height: 100%;
 }
 .container {
-  position: relative;
   min-height: 100%;
 }
 .inside {
   padding-bottom: 50px;
-}
-body {
-  background: #eaeaea;
 }
 nav {
   padding: 0;
@@ -132,57 +128,48 @@ nav {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 1024px;
+  min-width: 400px;
   max-width: 1024px;
   margin: 0 auto;
 }
 .wrapper-full {
   position: relative;
   width: 100%;
-  min-width: 1024px;
+  min-width: 400px;
 }
 .wrapper-main {
   position: relative;
-  overflow: hidden;
-  width: 100%;
-  min-width: 1024px;
+  height: 700px;
   height: 100vh;
-  min-height: 560px;
-  max-height: 760px;
-  background: url(../img/ny.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  text-align: center;
+  overflow: hidden;
 }
 .wrapper-main:before {
   content: "";
   position: absolute;
+  top: 0;
   left: 0;
   right: 0;
-  top: 0;
   bottom: 0;
-  z-index: 1;
-  background: #000;
-  opacity: .6;
+  background: rgba(0, 0, 0, 0.5);
 }
-.wrapper-main:after {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%;
-}
-.wrapper-main .main-info {
-  position: relative;
-  margin: 0 auto;
-  display: inline-block;
-  width: 1024px;
-  color: #fff;
-  z-index: 2;
-  vertical-align: middle;
+.wrapper-main .main-info p {
+  margin: 0;
 }
 .wrapper-main .main-info .main-info-text {
-  font: 35px 'Open Sans', sans-serif;
-  font-weight: 500;
+  position: absolute;
+  left: 50px;
+  top: 30%;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0;
+}
+.wrapper-main .main-info .main-info-text .desc {
+  font-size: 18px;
+}
+.wrapper-main .main-video {
+  min-height: 100%;
+  min-width: 100%;
 }
 .btn-big {
   -webkit-transition: all ease 0.5s;
@@ -201,60 +188,46 @@ nav {
 .btn-big:hover {
   background: rgba(0, 0, 0, 0.5);
 }
-.menu-fixed {
-  -webkit-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-  -o-transition: all ease 0.5s;
-  transition: all ease 0.5s;
-  position: fixed;
-  min-width: 1024px;
-  width: 100%;
-  z-index: 3;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  background: rgba(255, 255, 255, 0.2);
-  overflow: hidden;
+.menu {
+  position: absolute;
+  display: inline-block;
+  right: 50px;
+  top: 35px;
+  z-index: 5;
 }
-.menu-fixed nav {
-  max-width: 1024px;
-  width: 100%;
-  margin: 0 auto;
+.menu a {
+  text-decoration: none;
+  font-weight: 300;
 }
-.menu-fixed.menu-colored {
-  background: rgba(50, 73, 94, 0.9);
+.menu .menu-ul {
+  padding-bottom: 5px;
+}
+.menu-white a {
+  color: #fff;
+}
+.menu-white .menu-ul {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.menu-black a {
+  color: #222;
+}
+.menu-black .menu-ul {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 .menu-ul {
-  height: 60px;
-  list-style: none;
-  margin: 0;
+  display: inline-block;
   padding: 0;
+  margin: 0;
 }
 .menu-ul .menu-li {
-  float: left;
-  width: 20%;
-  max-width: 200px;
+  display: inline-block;
+  margin-left: 25px;
 }
-.menu-ul .menu-li.active {
-  background: rgba(120, 137, 153, 0.5);
-}
-.menu-ul .menu-li a {
-  -webkit-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-  -o-transition: all ease 0.5s;
-  transition: all ease 0.5s;
-  font: 18px 'Open Sans', sans-serif;
-  font-weight: 300;
-  display: block;
-  line-height: 60px;
-  width: 100%;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-}
-.menu-ul .menu-li a:hover {
-  background: rgba(120, 137, 153, 0.5);
+.menu-ul .menu-li:first-child {
+  margin-left: 0;
 }
 .about-block.about-main {
-  padding-top: 85px;
+  padding-top: 35px;
 }
 .about-block .block {
   width: 97%;
@@ -461,7 +434,7 @@ h2.title {
 .sem-city .city-info .city-date {
   display: inline-block;
   height: 100%;
-  background: #eaeaea;
+  background: #fff;
   color: #000;
   padding: 0 15px;
   margin-right: 15px;
@@ -490,6 +463,7 @@ h2.title {
   box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
 }
 .sem-info {
+  margin-top: 25px;
   padding: 0 15px 25px;
 }
 .sem-info span {
@@ -691,56 +665,6 @@ h2.title {
 .pop-result .result-icon {
   text-align: center;
   font-size: 70px;
-}
-.lektors-page {
-  color: #fff;
-}
-.lekt-back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url(../img/lektors.jpg) no-repeat center center / cover;
-  z-index: -1;
-}
-.lekt-back:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.75);
-}
-.contact-page {
-  color: #fff;
-}
-.contact-page a {
-  color: #fff;
-}
-.contact-back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url(../img/rim.jpg) no-repeat center center / cover;
-  z-index: -1;
-}
-.contact-back:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.75);
-}
-@media screen and (max-width: 500px) {
-  .wrapper-main {
-    background-position: 0 0 !important;
-  }
 }
 /* ==========================================================================
    Helper classes

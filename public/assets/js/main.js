@@ -1,6 +1,6 @@
 $(function(){
 
-	$('.js-scroll').on('click', function(){
+	/*$('.js-scroll').on('click', function(){
 		$('html, body').animate({ scrollTop: $('.wrapper-main').height() });
 		return false;
 	});
@@ -31,7 +31,7 @@ $(function(){
 			fotorama.show('<');
 			return false;
 		});
-	}
+	}*/
 
 });
 
@@ -80,36 +80,8 @@ var Popup = (function(){
 	return { show: show, close: close };
 })();
 
-$(document).on('submit', '.apply-form', function(e){
-	e.preventDefault();
-	if($('#policy').is(':checked')) {
-		$('.agree').removeClass('error');
-	} else {
-		$('.agree').addClass('error');
-		return;
+var main_video = (function(){
+	if($('.main-video').length != 0) {
+		$('.main-video')[0].play();
 	}
-	$('.btn-subm').addClass('active').attr('disabled', 'disabled');
-	$.ajax({
-		url: 'mail.php',
-		type: 'POST',
-		data: $(this).serialize()
-	}).always(function(){
-		$('.btn-subm').removeClass('active').removeAttr('disabled');
-		Popup.close('apply');
-		setTimeout(function(){
-			Popup.show('result');
-
-			setTimeout(function(){
-				Popup.close('result');
-			}, 3000);
-		}, 600);
-	}).done(function(){
-		$('.result-icon').html('<i class="fa fa-paper-plane"></i>');
-		$('.result-text').html('Ваша заявка успешно отправленна');
-	}).fail(function(data){
-		$('.result-icon').html('<i class="fa fa-times-circle"></i>');
-		$('.result-text').html('Произошла ошибка при отправке, попробуйте позже');
-		console.log(data);
-	});
-	return false;
-});
+})();

@@ -4,7 +4,7 @@
 @min-width: 400px;
 @nav-height: 60px;
 @footer-height: 50px;
-@body-color: #eaeaea;
+@body-color: #fde0dc;
 
 // CLASSES
 
@@ -84,10 +84,6 @@ html, body {
     padding-bottom: @footer-height;
 }
 
-body {
-    background: @body-color;
-}
-
 nav {
     padding: 0;
     margin: 0;
@@ -109,42 +105,41 @@ nav {
 
 .wrapper-main {
     position: relative;
-    overflow: hidden;
-    width: 100%;
-    min-width: @wrap-width;
+    height: 700px;
     height: 100vh;
-    min-height: 560px;
-    max-height: 760px;
-    background: url(../img/ny.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    text-align: center;
+    overflow: hidden;
 
     &:before {
         content: "";
         position: absolute;
-        left: 0; right: 0; top: 0; bottom: 0;
-        z-index: 1;
-        background: #000;
-        opacity: .6;
-    }
-
-    &:after {
-        .helper;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0, 0, 0, .5);
     }
 
     .main-info {
-        position: relative;
-        margin: 0 auto;
-        display: inline-block;
-        width: @wrap-width;
-        color: #fff;
-        z-index: 2;
-        vertical-align: middle;
+
+        p {
+            margin: 0;
+        }
 
         .main-info-text {
-            .open-sans(500, 35px);
+            position: absolute;
+            left: 50px;
+            top: 30%;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 300;
+            margin: 0;
+
+            .desc {
+                font-size: 18px;
+            }
         }
+    }
+
+    .main-video {
+        min-height: 100%;
+        min-width: 100%;
     }
 }
 
@@ -163,66 +158,61 @@ nav {
     }
 }
 
+.menu {
+    position: absolute;
+    display: inline-block;
+    right: 50px;
+    top: 35px;
+    z-index: 5;
 
-.menu-fixed {
-    .transition;
-    position: fixed;
-    min-width: @min-width;
-    width: 100%;
-    z-index: 3;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    background: rgba(255, 255, 255, 0.2);
-    overflow: hidden;
-
-    nav {
-        max-width: @wrap-width;
-        width: 100%;
-        margin: 0 auto;
+    a {
+        text-decoration: none;
+        font-weight: 300;
     }
 
-    &.menu-colored {
-        background: rgba(50, 73, 94, 0.9);
+    .menu-ul {
+        padding-bottom: 5px;
+    }
+}
+
+.menu-white {
+    a {
+        color: #fff;
+    }
+
+    .menu-ul {
+        border-bottom: 1px solid rgba(255, 255, 255, .5);
+    }
+}
+
+.menu-black {
+    a {
+        color: #222;
+    }
+
+    .menu-ul {
+        border-bottom: 1px solid rgba(0, 0, 0, .5);
     }
 }
 
 .menu-ul {
-    height: @nav-height;
-    list-style: none;
-    margin: 0;
+    display: inline-block;
     padding: 0;
-    //box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0;
 
     .menu-li {
-        float: left;
-        width: 20%;
-        max-width: 200px;
+        display: inline-block;
+        margin-left: 25px;
 
-        &.active {
-            background: rgba(120, 137, 153, 0.5);
-        }
-
-        a {
-            .transition(all, .5s, ease);
-            .open-sans(300, 18px);
-            display: block;
-            line-height: @nav-height;
-            width: 100%;
-            color: #fff;
-            //background: rgba(0, 235, 255, 0.3);
-            text-align: center;
-            text-decoration: none;
-            //text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
-
-            &:hover {
-                background: rgba(120, 137, 153, 0.5);
-            }
+        &:first-child {
+            margin-left: 0;
         }
     }
 }
 
 .about-block {
     &.about-main {
-        padding-top: 85px;
+        padding-top: 35px;
     }
 
     .block {
@@ -432,7 +422,7 @@ h2.title {
         .city-date {
             display: inline-block;
             height: 100%;
-            background: @body-color;
+            background: #fff;
             color: #000;
             padding: 0 15px;
             margin-right: 15px;
@@ -464,6 +454,7 @@ h2.title {
 }
 
 .sem-info {
+    margin-top: 25px;
     padding: 0 15px 25px;
 
     span {
@@ -698,13 +689,5 @@ h2.title {
     .result-icon {
         text-align: center;
         font-size: 70px;
-    }
-}
-
-    
-
-@media screen and (max-width: 500px) {
-    .wrapper-main {
-        background-position: 0 0 !important;
     }
 }

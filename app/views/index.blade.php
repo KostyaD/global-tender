@@ -2,8 +2,16 @@
 
 @section('content')
 				<section class="wrapper-main">
+                    <video class="main-video" autoplay="autoplay" loop>
+                        <source src="{{URL::to('assets/video.mp4')}}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                        <!-- <source src="movie.webm" type='video/webm; codecs="vp8, vorbis"' /> -->
+                    </video>
                     <div class="main-info">
-                        <h1 class="main-info-text">Cеминары по государственным закупкам<br>на территории всей Российской Федерации</h1>
+                        <h1 class="main-info-text">
+                            <span class="title">Cеминары<br>по государственным закупкам</span>
+                            <br>
+                            <span class="desc">на территории всей Российской Федерации</span>
+                        </h1>
                         <p><a href="#" class="btn-big js-scroll">Узнать подробнее <i class="fa fa-angle-double-down"></i></a></p>
                     </div>
                 </section>
@@ -40,9 +48,8 @@
                 </section>
 
                 <section class="wrapper">
-                    <div class="about-block padding-t25">
+                    <div class="about-block padding-t25 padding-b25">
                         <div class="block block-t-center clearfix">
-                            <p class="title">Перейти к:</p>
                             <a href="{{URL::to('seminars')}}" class="btn-links"><span>Предстоящие семинары</span></a>
                             <a href="{{URL::to('feedback')}}" class="btn-links"><span>Многочисленные отзывы</span></a>
                             <a href="{{URL::to('contacts')}}" class="btn-links"><span>Контактная информация</span></a>

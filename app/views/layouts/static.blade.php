@@ -28,7 +28,7 @@
         <![endif]-->
         <div class="container page">
             <div class="inside">
-                <header class="menu-fixed menu-colored">
+                <header class="menu menu-black">
                     <nav>
                         <ul class="menu-ul">
                             <li class="menu-li"><a href="{{URL::to('/')}}">Главная</a></li>
