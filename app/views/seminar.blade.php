@@ -53,13 +53,24 @@ $semArray = array(
                         <!-- <div class="row">
                             <span class="sem-name">Место проведения:</span><span class="sem-val">Вертол Экспо</span>
                         </div> -->
-                        <div class="row">
-                            <span class="sem-name">Время:</span><span class="sem-val">с 11:00 до 16:00</span>
-                        </div>
-                        <div class="row">
-                            <span class="sem-name">Стоимость:</span><!--
-                            --><span class="sem-val">7000 рублей, при подаче заявки с сайта <span class="sem-sale">скидка 10%</span></span>
-                        </div>
+                        @if($seminar[0] == 'Москва')
+                            <div class="row">
+                                    <span class="sem-name">Время:</span><span class="sem-val">с 11:00 до 17:00</span>
+                            </div>
+                            <div class="row">
+                                <span class="sem-name">Стоимость:</span><!--
+                                --><span class="sem-val">8500 рублей, при подаче заявки с сайта <span class="sem-sale">скидка 10%</span></span>
+                            </div>
+                        @else 
+                            <div class="row">
+                                    <span class="sem-name">Время:</span><span class="sem-val">с 11:00 до 16:00</span>
+                            </div>
+                            <div class="row">
+                                <span class="sem-name">Стоимость:</span><!--
+                                --><span class="sem-val">7000 рублей, при подаче заявки с сайта <span class="sem-sale">скидка 10%</span></span>
+                            </div>
+                        @endif
+                            
                         <div class="row">
                             <span class="sem-name">Контактное лицо:</span><span class="sem-val">Надежда Сергеевна</span>
                         </div>
