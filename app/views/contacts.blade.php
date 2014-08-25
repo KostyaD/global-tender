@@ -3,7 +3,7 @@
 @section('content')
                 <div class="spec-title contacts-title">
                     <div class="wrapper">
-                        <h2>Контактная игформация</h2>
+                        <h2>Контактная информация</h2>
                     </div>
                 </div>
                 <main class="wrapper clearfix">
