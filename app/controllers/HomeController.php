@@ -67,6 +67,14 @@ class HomeController extends BaseController {
 	        Телефон: {$_POST['contact-phone']} \n
 	    5. Комментарий: {$_POST['comment']} \n";
 
+	    $data['content'] = $content;
+
+	    Mail::send('emails.apply', $data, function($message)
+		{
+		    $message->from('noreply@global-tender.ru', 'Заявка :: "Глобал Тендер"');
+		    $message->to('thedamaxstudio@gmail.com');
+		});
+
 	}
 
 }
