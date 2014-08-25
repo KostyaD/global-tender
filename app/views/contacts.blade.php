@@ -1,8 +1,12 @@
-@extends('layouts.static')
+@extends('layouts.main')
 
 @section('content')
+                <div class="spec-title contacts-title">
+                    <div class="wrapper">
+                        <h2>Контактная игформация</h2>
+                    </div>
+                </div>
                 <main class="wrapper clearfix">
-                    <h2 class="title padding-t25">Контактная информация</h2>
                     <table class="cont-table">
                         <tr>
                             <td class="table-title">Отдел по оранизации семинаров</td>

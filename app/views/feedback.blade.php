@@ -1,13 +1,17 @@
-@extends('layouts.static')
+@extends('layouts.main')
 
 @section('content')
+                <div class="spec-title feedb-title">
+                    <div class="wrapper">
+                        <h2>Отзывы</h2>
+                    </div>
+                </div>
                 <main class="wrapper clearfix">
-                    <h2 class="title padding-t25">Отзывы</h2>
                     <!-- <a href="#" class="nav-next"><i class="fa fa-angle-right"></i></a>
                     <a href="#" class="nav-prev"><i class="fa fa-angle-left"></i></a> -->
                     <div class="feed-imgs">
-
-                        <img src="assets/img/feedback/f1.jpg"><!--
+                        <img src="assets/img/feedback/001.jpg"><!--
+                        --><img src="assets/img/feedback/f1.jpg"><!--
                         --><img src="assets/img/feedback/f2.jpg"><!--
                         --><img src="assets/img/feedback/f3.jpg"><!--
                         --><img src="assets/img/feedback/f4.jpg"><!--

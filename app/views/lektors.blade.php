@@ -1,8 +1,12 @@
-@extends('layouts.static')
+@extends('layouts.main')
 
 @section('content')
+                <div class="spec-title lektors-title">
+                    <div class="wrapper">
+                        <h2>Наши лекторы</h2>
+                    </div>
+                </div>
                 <main class="wrapper clearfix">
-                    <h2 class="title padding-t25">Наши лекторы</h2>
                     <ul class="lektors">
                         <li><b>Мироненко Павел Александрович</b> —главный государственный инспектор  Центрального аппарата ФАС России.</li>
                         <li><b>Вершинина Ирина Александровна</b> —советник управления контроля размещения государственного заказа Центрального аппарата ФАС России.</li>

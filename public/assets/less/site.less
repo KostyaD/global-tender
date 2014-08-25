@@ -698,3 +698,37 @@ h2.title {
         width: 25%;
     }
 }
+
+.spec-title {
+    position: relative;
+    margin-bottom: 25px;
+    color: #fff;
+    height: 200px;
+    line-height: 150px;
+
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        background: rgba(0, 0, 0, .40);
+        top: 0; left: 0; right: 0; bottom: 0;
+    }
+
+    h2 {
+        margin: 0;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.lektors-title {
+    background: url(../img/lektors.jpg) no-repeat center center e('/') cover;
+}
+
+.feedb-title {
+    background: url(../img/back-good.jpg) no-repeat center center e('/') cover;
+}
+
+.contacts-title {
+    background: url(../img/ny.jpg) no-repeat center center e('/') cover;
+}
