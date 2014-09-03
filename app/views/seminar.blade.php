@@ -14,12 +14,12 @@ $semArray = array(
         //'yl223' => array('Ульяновск', '08 августа', '', 'http://xn----7sbaba0dyat1arg.xn--p1ai/image/3panorama-1.jpg'),
         //'vladimir223' => array('Владимир', '11 августа', '', 'http://www.zapoved.ru/photos/9bab/db77/834c/1083/95b7/ee05/50a8/bbba/large.jpg?2880811'),
         //'birb223' => array('Биробиджан', '15 сентября', '', 'http://biradm.ru/files/potr/pict/2012_2.jpg'), 
-        'petroz223' => array('Петрозаводск', '28 августа', '', 'http://www.vokrugsveta.ru/encyclopedia/images/e/e4/Petrozavodsk_Naberezhnaya.jpg'),
+        //'petroz223' => array('Петрозаводск', '28 августа', '', 'http://www.vokrugsveta.ru/encyclopedia/images/e/e4/Petrozavodsk_Naberezhnaya.jpg'),
         //'vor223' => array('Воронеж', '22 августа', '', 'http://bestmaps.ru/files/content_images/20130204134915.jpg'), 
-        'cheb223' => array('Чебоксары', '29 августа', '', 'http://www.mrtrans.ru/uploads/tiny/ceb.jpg'), 
+        //'cheb223' => array('Чебоксары', '29 августа', '', 'http://www.mrtrans.ru/uploads/tiny/ceb.jpg'), 
         'saransk223' => array('Саранск', '05 сентября', '', 'http://www.udikov.ru/wp-content/uploads/2012/11/Saransk.jpg'), 
         'moscow223' => array('Москва', '12 сентября', '', 'http://www.mandri.lg.ua/kcfinder/img/images/Moscow-1600x900-005.jpg'), 
-        'kaliningrad223' => array('Калиниград', '15 сентября', '', 'http://turflot.ru/files/img/holidaysrussia/18/imya-fajla_250.jpg'), 
+        'kaliningrad223' => array('Псков', '15 сентября', '', 'http://turflot.ru/files/img/holidaysrussia/18/imya-fajla_250.jpg'), 
         'xab223' => array('Хабаровск', '15 сентября', '', 'http://organum-visus.com/sites/default/files/styles/1024x768/public/news_mini_top_img/khabarovsk-organum-visus-eyenews-120712g.jpeg?itok=C7U8OkzE&slideshow=true&slideshowAuto=false&slideshowSpeed=4000&speed=350&transition=fade'),       
         'vlad223' => array('Владивосток', '16 сентября', '', 'http://s.pikabu.ru/post_img/big/2013/10/23/5/1382508326_1790634624.jpg'), 
         ),
@@ -106,6 +106,42 @@ $semArray = array(
                     <?php 
                     } if($_GET['act'] == '44') {
                     ?>
+
+                    <div class="row">
+                            <span class="sem-name">Время:</span><span class="sem-val">с 11:00 до 16:00</span>
+                    </div>
+                    <div class="row">
+                        <span class="sem-name">Стоимость:</span><!--
+                        --><span class="sem-val">7000 рублей, при подаче заявки с сайта <span class="sem-sale">скидка 10%</span></span>
+                    </div>
+
+                    <hr>
+
+                    <h2>Целевая аудитория:</h2>
+
+                    <p>Руководители компаний, руководители и специалисты тендерных отделов, отделов продаж, отделов по маркетингу, юридических отделов, бухгалтеров организаций-поставщиков товаров/работ/услуг, а также руководители и специалисты в сфере закупок — заказчики и специалисты АХЧ, отвечающие за размещение заказов в унитарных предприятиях, автономных учреждениях, государственных компаниях и субъектах естественных монополий.</p>
+
+
+                    <h2>Программа семинара</h2>
+
+                    <ul>
+                        <li>Реформа государственных закупок;
+                        <li>Федеральный закон № 44-ФЗ «О контрактной системе в сфере закупок товаров, работ, услуг для обеспечения государственных и муниципальных нужд»;
+                        <li>Сфера применения;
+                        <li>Терминология нового закона. Участники контрактной системы;
+                        <li>Принципы контрактной системы;
+                        <li>Планирование государственных и муниципальных закупок;
+                        <li>Начальная максимальная цена контракта, методы обоснования;
+                        <li>Новые требования к участникам закупки. Ограничения, преференции;
+                        <li>Контрактная служба, контрактный управляющий. Специализированная организация. Уполномоченный орган;
+                        <li>Порядок и способы определения поставщиков (подрядчиков, исполнителей):
+                        <li>Открытый конкурс. Конкурс с ограниченным участием. Двухэтапный конкурс;
+                        <li>Электронный аукцион;
+                        <li>Запрос котировок;
+                        <li>Запрос предложений;
+                        <li>Единственный поставщик;
+                        <li>Антидемпинговые меры, понятие добросовестности поставщика;
+                    </ul>
 
                     <?php
                     } if($_GET['act'] == 'nal') {
