@@ -10,7 +10,8 @@
                     <!-- <a href="#" class="nav-next"><i class="fa fa-angle-right"></i></a>
                     <a href="#" class="nav-prev"><i class="fa fa-angle-left"></i></a> -->
                     <div class="feed-imgs">
-                        <img src="assets/img/feedback/f34.jpg"><!--
+                        <img src="assets/img/feedback/002.jpg"><!--
+                        --><img src="assets/img/feedback/f34.jpg"><!--
                         --><img src="assets/img/feedback/001.jpg"><!--
                         --><img src="assets/img/feedback/f1.jpg"><!--
                         --><img src="assets/img/feedback/f2.jpg"><!--

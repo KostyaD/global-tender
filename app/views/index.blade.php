@@ -10,6 +10,7 @@
                         </h1>
                         <!-- <p><a href="#" class="btn-big js-scroll">Узнать подробнее <i class="fa fa-angle-double-down"></i></a></p> -->
                     </div>
+                    <a href="#" class="down-link"><i class="fa fa-angle-double-down"></i></a>
                 </section>
 
                 <main class="wrapper clearfix">

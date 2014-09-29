@@ -858,3 +858,18 @@ h2.title {
     page-break-after: avoid;
   }
 }
+
+.down-link {
+  position: absolute;
+  display: inline-block;
+  z-index: 5;
+  bottom: 10%;
+  left: 50px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 50px;
+}
+
+.down-link:hover {
+  color: #aaa;
+}

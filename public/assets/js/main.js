@@ -85,3 +85,12 @@ var main_video = (function(){
 		$('.main-video')[0].play();
 	}
 })();
+
+var down_link = (function(){
+	$(document).on('click', '.down-link', function(){
+		$('html, body').animate({
+			scrollTop: $(window).height()
+		});
+		return false;
+	});
+})();
