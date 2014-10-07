@@ -72,7 +72,7 @@ class HomeController extends BaseController {
 	    Mail::send('emails.apply', $data, function($message)
 		{
 		    $message->from('noreply@global-tender.ru', 'Заявка :: "Глобал Тендер"');
-		    $message->to('thedamaxstudio@gmail.com');
+		    $message->to('thedamaxstudio@gmail.com')->cc('global-tender@mail.ru');
 		});
 
 	}
