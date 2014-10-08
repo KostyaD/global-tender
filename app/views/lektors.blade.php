@@ -1,5 +1,12 @@
 @extends('layouts.main')
 
+@section('meta')
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>"Глобал Тендер" CЕМИНАРЫ ПО ГОСУДАРСТВЕННЫМ ЗАКУПКАМ</title>
+        <meta name="description" content="">
+@stop
+
 @section('content')
                 <div class="spec-title lektors-title">
                     <div class="wrapper">

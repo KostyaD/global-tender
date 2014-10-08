@@ -6,10 +6,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>"Глобал Тендер" CЕМИНАРЫ ПО ГОСУДАРСТВЕННЫМ ЗАКУПКАМ</title>
-        <meta name="description" content="">
+        @yield('meta')
         <meta name="viewport" content="width=500px, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
