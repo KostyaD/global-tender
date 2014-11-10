@@ -11,7 +11,11 @@
 				<section class="wrapper-main">
                     <div class="main-info">
                         <h1 class="main-info-text">
-                            <span class="title">Cеминары<br>по государственным закупкам</span>
+                            <span class="title">
+                                Cеминары по государственным<br>
+                                и коммерческим закупкам<br>
+                                <span>(44-ФЗ, 223-ФЗ)</span>
+                            </span>
                             <br>
                             <span class="desc">на территории всей Российской Федерации</span>
                         </h1>
