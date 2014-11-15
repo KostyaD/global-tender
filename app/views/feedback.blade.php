@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>"Глобал Тендер" CЕМИНАРЫ ПО ГОСУДАРСТВЕННЫМ ЗАКУПКАМ</title>
         <meta name="description" content="">
+        <link rel="stylesheet" href="{{URL::to('assets/css/jquery.fancybox-1.3.4.css')}}" type="text/css" media="screen" />
 @stop
 
 @section('content')
@@ -58,9 +59,20 @@
 @stop
 
 @section('script')
+    <script type="text/javascript" src="{{URL::to('assets/js/vendor/jquery.fancybox-1.3.4.js')}}"></script>
     <script>
         $('img').each(function(){
-            $(this).wrap('<a href="' + $(this).attr('src') + '" target="_blank"></a>');
+            $(this).after('<a href="' + $(this).attr('src') + '" rel="gallery" style="background-image: url(' + $(this).attr('src') + ');" target="_blank" class="feedback-img"></a>');
+            $(this).remove();
+        });
+
+        $(function(){
+            $('.feedback-img').fancybox({
+                width : 1287,
+                   height : 720,
+                   fitToView : false,
+                   autoSize : false
+            });
         });
     </script>
 @stop

@@ -30,6 +30,11 @@ class HomeController extends BaseController {
 		return View::make('seminar');
 	}
 
+	public function services()
+	{
+		return View::make('services');
+	}
+
 	public function lektors()
 	{
 		return View::make('lektors');

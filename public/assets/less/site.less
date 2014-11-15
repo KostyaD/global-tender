@@ -1,7 +1,7 @@
 // VARIABLES
 
 @wrap-width: 1024px;
-@min-width: 400px;
+@min-width: 1024px;
 @nav-height: 60px;
 @footer-height: 50px;
 @body-color: #fde0dc;
@@ -78,6 +78,7 @@ html, body {
 
 .container {
     min-height: 100%;
+    min-width: @min-width;
 }
 
 .inside {
@@ -208,6 +209,15 @@ nav {
         &:first-child {
             margin-left: 0;
         }
+
+        a {
+            -webkit-transition: all .1s ease;
+                    transition: all .1s ease;
+
+            &:hover {
+                color: #ccc;
+            }
+        }
     }
 }
 
@@ -243,16 +253,16 @@ h2.title {
     display: inline-block;
     width: 280px;
     height: 100px;
-    border: 2px solid #222;
+    border: 2px solid #83395f;
     margin: 10px;
-    color: #222;
+    color: #83395f;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
     vertical-align: middle;
 
     &:hover {
-        background: #222;
+        background: #83395f;
         color: #fff;
     }
 
@@ -268,13 +278,24 @@ h2.title {
 }
 
 .wrapper-good {
-    background: url(../img/back-good.jpg);
+    position: relative;
+    background: url(../img/back_good.jpg);
     background-size: cover;
-    margin-top: 50px;
+    //margin-top: 50px;
     color: #fff;
 
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0, 0, 0, .75);
+        z-index: 1;
+    }
+
     .wrapper {
+        position: relative;
         padding: 50px 0;
+        z-index: 2;
     }
 
     .title {
@@ -694,8 +715,26 @@ h2.title {
 }
 
 .feed-imgs {
-    img {
+    font-size: 0;
+    /*img {
         width: 25%;
+    }*/
+
+    .feedback-img {
+        display: inline-block;
+        width: 50%;
+        padding: 2px;
+        height: 500px;
+        border: 1px solid #ccc;
+        background-position: top center;
+        background-size: cover;
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
+
+        img {
+            max-width: 100%;
+        }
     }
 }
 
@@ -703,8 +742,8 @@ h2.title {
     position: relative;
     margin-bottom: 25px;
     color: #fff;
-    height: 200px;
-    line-height: 150px;
+    height: 100px;
+    line-height: 95px;
 
     &:before {
         content: "";
@@ -733,13 +772,168 @@ h2.title {
     background: url(../img/ny.jpg) no-repeat center center e('/') cover;
 }
 
+.service-title {
+    background: url(../img/london.jpg) no-repeat center center e('/') cover;
+}
+
 .down-link {
-  position: absolute;
-  display: inline-block;
-  z-index: 5;
-  bottom: 10%;
-  left: 50px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 50px;
+    position: absolute;
+    display: inline-block;
+    z-index: 5;
+    bottom: 2.5%;
+    left: 50%;
+    margin-left: -16px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+.seminar-table {
+    tr:first-child {
+        height: 50px;
+        font-weight: bold;
+    }
+    td:first-child {
+        width: 150px;
+    }
+
+    td {
+        border: 1px solid;
+        padding: 20px;
+    }
+}
+
+.apply-us-btn {
+    display: inline-block;
+    vertical-align: middle;
+    height: 25px;
+    line-height: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-left: 25px;
+    background: #83395f;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    color: #fff;
+    font-weight: 300;
+    padding: 0 15px;
+    -webkit-transition: all .1s ease;
+            transition: all .1s ease;
+
+    &:hover {
+        background: #000;
+    }
+}
+
+.download-block {
+    display: none;
+    margin-top: 25px;
+    font-size: 20px;
+    
+    a {
+        color: #83395f;
+        text-decoration: none;
+        -webkit-transition: all .1s ease;
+                transition: all .1s ease;
+
+        &:hover {
+            color: #000;
+        }
+    }
+
+    i {
+        font-size: 35px;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+}
+
+.services {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    margin-bottom: 25px;
+
+    .service-item {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+        padding: 20px;
+        font-size: 16px;
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
+
+        .title {
+            padding: 20px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 25px;
+            background: rgb(95, 121, 130);
+            color: #fff;
+            font-weight: 300;
+
+            i {
+                margin-right: 10px;
+            }
+        }
+
+        .service-cont {
+            background: rgba(154, 177, 217, .25);
+            padding: 20px;
+        }
+
+        .service-list {
+            list-style: none;
+            margin-bottom: 40px;
+
+            li {
+                position: relative;
+                margin-bottom: 10px;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: -15px;
+                    top: .7em;
+                    width: 3px;
+                    height: 3px;
+                    border-radius: 3px;
+                    background: #000;
+                }
+            }
+        }
+
+        .list-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+    }
+
+    .contact-block {
+        padding: 20px;
+        background: rgba(255, 255, 255, .75);
+
+        .c-title {
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 25px;
+            border-bottom: 1px solid rgba(0, 0, 0, .25);
+            padding-bottom: 15px;
+        }
+
+        .contact-li {
+            margin-bottom: 15px;
+            font-size: 14px;
+
+            a {
+                color: #000;
+            }
+        }
+    }
 }

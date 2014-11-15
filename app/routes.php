@@ -14,6 +14,7 @@
 Route::get('/', 'HomeController@index');
 Route::get('/seminars', 'HomeController@seminars');
 Route::get('/seminar', 'HomeController@seminar');
+Route::get('/services', 'HomeController@services');
 Route::get('/feedback', 'HomeController@feedback');
 Route::get('/lektors', 'HomeController@lektors');
 Route::get('/contacts', 'HomeController@contacts');

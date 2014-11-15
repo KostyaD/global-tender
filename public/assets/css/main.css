@@ -117,6 +117,7 @@ body {
 }
 .container {
   min-height: 100%;
+  min-width: 1024px;
 }
 .inside {
   padding-bottom: 50px;
@@ -128,14 +129,14 @@ nav {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 400px;
+  min-width: 1024px;
   max-width: 1024px;
   margin: 0 auto;
 }
 .wrapper-full {
   position: relative;
   width: 100%;
-  min-width: 400px;
+  min-width: 1024px;
 }
 .wrapper-main {
   position: relative;
@@ -227,6 +228,13 @@ nav {
 .menu-ul .menu-li:first-child {
   margin-left: 0;
 }
+.menu-ul .menu-li a {
+  -webkit-transition: all .1s ease;
+  transition: all .1s ease;
+}
+.menu-ul .menu-li a:hover {
+  color: #ccc;
+}
 .about-block.about-main {
   padding-top: 35px;
 }
@@ -260,16 +268,16 @@ h2.title {
   display: inline-block;
   width: 280px;
   height: 100px;
-  border: 2px solid #222;
+  border: 2px solid #83395f;
   margin: 10px;
-  color: #222;
+  color: #83395f;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
 }
 .btn-links:hover {
-  background: #222;
+  background: #83395f;
   color: #fff;
 }
 .btn-links:before {
@@ -284,13 +292,25 @@ h2.title {
   vertical-align: middle;
 }
 .wrapper-good {
-  background: url(../img/back-good.jpg);
+  position: relative;
+  background: url(../img/back_good.jpg);
   background-size: cover;
-  margin-top: 50px;
   color: #fff;
 }
+.wrapper-good:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
 .wrapper-good .wrapper {
+  position: relative;
   padding: 50px 0;
+  z-index: 2;
 }
 .wrapper-good .title {
   text-align: center;
@@ -667,15 +687,33 @@ h2.title {
   text-align: center;
   font-size: 70px;
 }
-.feed-imgs img {
-  width: 25%;
+.feed-imgs {
+  font-size: 0;
+  /*img {
+        width: 25%;
+    }*/
+}
+.feed-imgs .feedback-img {
+  display: inline-block;
+  width: 50%;
+  padding: 2px;
+  height: 500px;
+  border: 1px solid #ccc;
+  background-position: top center;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.feed-imgs .feedback-img img {
+  max-width: 100%;
 }
 .spec-title {
   position: relative;
   margin-bottom: 25px;
   color: #fff;
-  height: 200px;
-  line-height: 150px;
+  height: 100px;
+  line-height: 95px;
 }
 .spec-title:before {
   content: "";
@@ -700,6 +738,147 @@ h2.title {
 }
 .contacts-title {
   background: url(../img/ny.jpg) no-repeat center center / cover;
+}
+.service-title {
+  background: url(../img/london.jpg) no-repeat center center / cover;
+}
+.down-link {
+  position: absolute;
+  display: inline-block;
+  z-index: 5;
+  bottom: 2.5%;
+  left: 50%;
+  margin-left: -16px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 50px;
+}
+.seminar-table tr:first-child {
+  height: 50px;
+  font-weight: bold;
+}
+.seminar-table td:first-child {
+  width: 150px;
+}
+.seminar-table td {
+  border: 1px solid;
+  padding: 20px;
+}
+.apply-us-btn {
+  display: inline-block;
+  vertical-align: middle;
+  height: 25px;
+  line-height: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-left: 25px;
+  background: #83395f;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 300;
+  padding: 0 15px;
+  -webkit-transition: all .1s ease;
+  transition: all .1s ease;
+}
+.apply-us-btn:hover {
+  background: #000;
+}
+.download-block {
+  display: none;
+  margin-top: 25px;
+  font-size: 20px;
+}
+.download-block a {
+  color: #83395f;
+  text-decoration: none;
+  -webkit-transition: all .1s ease;
+  transition: all .1s ease;
+}
+.download-block a:hover {
+  color: #000;
+}
+.download-block i {
+  font-size: 35px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.services {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  margin-bottom: 25px;
+}
+.services .service-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  padding: 20px;
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.services .service-item .title {
+  padding: 20px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 25px;
+  background: #5f7982;
+  color: #fff;
+  font-weight: 300;
+}
+.services .service-item .title i {
+  margin-right: 10px;
+}
+.services .service-item .service-cont {
+  background: rgba(154, 177, 217, 0.25);
+  padding: 20px;
+}
+.services .service-item .service-list {
+  list-style: none;
+  margin-bottom: 40px;
+}
+.services .service-item .service-list li {
+  position: relative;
+  margin-bottom: 10px;
+}
+.services .service-item .service-list li:before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: .7em;
+  width: 3px;
+  height: 3px;
+  border-radius: 3px;
+  background: #000;
+}
+.services .service-item .list-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.services .contact-block {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.75);
+}
+.services .contact-block .c-title {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  padding-bottom: 15px;
+}
+.services .contact-block .contact-li {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+.services .contact-block .contact-li a {
+  color: #000;
 }
 /* ==========================================================================
    Helper classes
@@ -857,19 +1036,4 @@ h2.title {
   h3 {
     page-break-after: avoid;
   }
-}
-
-.down-link {
-  position: absolute;
-  display: inline-block;
-  z-index: 5;
-  bottom: 10%;
-  left: 50px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 50px;
-}
-
-.down-link:hover {
-  color: #aaa;
 }

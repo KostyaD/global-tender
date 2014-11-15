@@ -25,7 +25,7 @@
                             <td><a href="mailto:global-tender@yandex.ru" class="us-link">global-tender@yandex.ru</td>
                         </tr>
                         <tr>
-                            <td>Надежда Сергеевна</td>
+                            <td>Кристина Олеговна</td>
                         </tr>
                     </table>
                     <table class="cont-table">

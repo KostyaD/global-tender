@@ -1,5 +1,7 @@
 $(function(){
 
+	$('.js-height-list').listHeight('.service-cont');
+
 	/*$('.js-scroll').on('click', function(){
 		$('html, body').animate({ scrollTop: $('.wrapper-main').height() });
 		return false;
@@ -94,3 +96,16 @@ var down_link = (function(){
 		return false;
 	});
 })();
+
+$.fn.listHeight = function(elem) {
+	var parent = $(this);
+
+	var max = 0;
+	var block = parent.find(elem);
+	block.each(function(){
+		if($(this).height() > max) {
+			max = $(this).height();
+		}
+	});
+	block.css('min-height', max);
+}
