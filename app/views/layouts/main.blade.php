@@ -31,7 +31,7 @@
                         <ul class="menu-ul">
                             <li class="menu-li"><a href="{{URL::to('/')}}">Главная</a></li>
                             <li class="menu-li"><a href="{{URL::to('/seminars')}}">Семинары</a></li>
-                            <li class="menu-li"><a href="{{URL::to('/services')}}">Юр. Услуги</a></li>
+                            <li class="menu-li"><a href="{{URL::to('/services')}}">Юр. услуги</a></li>
                             <li class="menu-li"><a href="{{URL::to('/feedback')}}">Отзывы</a></li>
                             <!-- <li class="menu-li"><a href="{{URL::to('/lektors')}}">Лекторы</a></li> -->
                             <li class="menu-li"><a href="{{URL::to('/contacts')}}">Контакты</a></li>
