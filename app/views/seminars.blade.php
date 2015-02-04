@@ -47,7 +47,7 @@ $semArray = array(
         //'blag' => array('Благовещенск', '15 января', '15', 'http://www.infokart.ru/wp-content/uploads/2013/02/blagoveshchensk_gorod.jpg'),
         //'xab' => array('Хабаровск', '16 января', '15', 'http://organum-visus.com/sites/default/files/styles/1024x768/public/news_mini_top_img/khabarovsk-organum-visus-eyenews-120712g.jpeg?itok=C7U8OkzE&slideshow=true&slideshowAuto=false&slideshowSpeed=4000&speed=350&transition=fade'),       
         //'astrahan' => array('Астрахань', '23 января', '15', 'http://nesiditsa.ru/wp-content/uploads/2012/07/Astrahan.jpeg'),
-        'yaroslavl' => array('Ярославль', '2 февраля', '15', 'img/city/yaroslavl.jpg'),
+        //'yaroslavl' => array('Ярославль', '2 февраля', '15', 'img/city/yaroslavl.jpg'),
         'murmansk' => array('Мурманск', '6 февраля', '15', 'http://miriam-tour.ru/pic/kola_murmansk_01b.jpg'),
         'perm' => array('Пермь', '9 февраля', '15', 'http://cs14114.vk.me/c540101/v540101358/18bc/RMQMN0TirLc.jpg'),
         'kaliningrad' => array('Калининград', '13 февраля', '15', 'http://turflot.ru/files/img/holidaysrussia/18/otdih-v-kaliningradskoj-oblasti---starinnie-ulochki-kaliningradskoj-oblasti_250.jpg'),
