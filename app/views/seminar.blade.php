@@ -97,13 +97,13 @@ $semArray = array(
                         <!-- <div class="row">
                             <span class="sem-name">Место проведения:</span><span class="sem-val">Вертол Экспо</span>
                         </div> -->
-                        @if($seminar[0] == 'Москва')
+                        @if($seminar[0] == 'Тюмень')
                             <div class="row">
                                     <span class="sem-name">Время:</span><span class="sem-val">с 11:00 до 17:00</span>
                             </div>
                             <div class="row">
                                 <span class="sem-name">Стоимость:</span><!--
-                                --><span class="sem-val">6500 рублей <a class="apply-us-btn js-pop-show" data-popup="apply" href="#">Подать заявку</a><!-- , при подаче заявки с сайта <span class="sem-sale">скидка 10%</span> --></span>
+                                --><span class="sem-val">7500 рублей <a class="apply-us-btn js-pop-show" data-popup="apply" href="#">Подать заявку</a><!-- , при подаче заявки с сайта <span class="sem-sale">скидка 10%</span> --></span>
                             </div>
                         @else 
                             <div class="row">
